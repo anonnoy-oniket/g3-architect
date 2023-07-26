@@ -1,0 +1,80 @@
+/*------------ general styles ------------*/
+
+
+/*----------- header styles -----------*/
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 144, 14, 0.10);
+    ;
+}
+
+.title {
+    font-size: 2.5em;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    margin-left: 3em;
+}
+
+/*------------------ banner styles ----------------*/
+
+.banner {
+    padding-top: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 144, 14, 0.10);
+    padding-bottom: 1em;
+}
+
+.banner-title {
+    margin: 0;
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.banner-description {
+    width: 75%;
+    text-align: center;
+    color: #727272;
+}
+
+.banner button {
+    color: white;
+    font-size: larger;
+    font-weight: 600;
+    background-color: #FF900E;
+    border: none;
+    border-radius: .5em;
+    width: 9em;
+    height: 3em;
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+
+.banner-image {
+    width: 75%;
+}
+
+.banner-image img {
+    width: 100%;
+}
+
+/* mobile devices css */
+
+@media screen and (max-width: 688px) {
+    
+    /* header styles */
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
