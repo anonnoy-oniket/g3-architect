@@ -1,5 +1,17 @@
 /*------------ general styles ------------*/
 
+.primary-btn {
+    color: white;
+    font-size: larger;
+    font-weight: 600;
+    background-color: #FF900E;
+    border: none;
+    border-radius: .5em;
+    width: 9em;
+    height: 3em;
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
 
 /*----------- header styles -----------*/
 
@@ -45,19 +57,6 @@ header a {
     color: #727272;
 }
 
-.banner button {
-    color: white;
-    font-size: larger;
-    font-weight: 600;
-    background-color: #FF900E;
-    border: none;
-    border-radius: .5em;
-    width: 9em;
-    height: 3em;
-    margin-top: 1em;
-    margin-bottom: 3em;
-}
-
 .banner-image {
     width: 75%;
 }
@@ -66,15 +65,68 @@ header a {
     width: 100%;
 }
 
+/*---------------------features container----------------- */
+
+.features-container {
+    margin-top: 3em;
+}
+
+.quick-list {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 2em;
+}
+
+.quick-img {
+    width: 35%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .5em;
+}
+
+.quick-img img {
+    width: 100%;
+}
+
+.quick-description {
+
+    width: 30%;
+}
+
+.quick-description h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
 /* mobile devices css */
 
 @media screen and (max-width: 688px) {
-    
+
     /* header styles */
 
     nav {
         display: flex;
         flex-direction: column;
         gap: 5px;
+    }
+
+    /* features container */
+
+    .quick-img {
+        grid-template-columns: 1fr;
+    }
+
+    .quick-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quick-img {
+        width: 80%;
+    }
+
+    .quick-description {
+        width: 80%;
     }
 }
