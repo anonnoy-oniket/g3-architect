@@ -185,6 +185,33 @@ header a {
     font-weight: 500;
 }
 
+.some-facts {
+    width: 27%;
+    padding-left: 12.5%;   
+}
+
+/*-----------achievements section styles-----------*/
+
+.achievements-container {
+    margin-top: 4em;
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+    
+}
+
+.achievement {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    width: 12.5%;
+    text-align: center;
+    padding: 2em .7em;
+}
+
+.achievement h2, p {
+    margin: 0;
+}
+
 /* mobile devices css */
 
 @media screen and (max-width: 688px) {
@@ -234,4 +261,23 @@ header a {
         padding: 1em 1em;
         position: static;
     }
+
+    .some-facts {
+        margin-top: 10em;
+        padding-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* achievement section */
+
+    .achievements-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .achievement {
+        width: 80%;
+    }
+
 }
