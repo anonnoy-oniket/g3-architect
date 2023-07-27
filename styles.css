@@ -224,9 +224,14 @@ header a {
         width: 100%;
     }
 
+    .btn-div {
+        display: flex;
+        justify-content: center;
+    }
+
     .features-btn {
-        position: static;
-        margin-left: 25%;
         margin-top: 1em;
+        padding: 1em 1em;
+        position: static;
     }
 }
