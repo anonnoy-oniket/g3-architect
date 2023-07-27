@@ -1,5 +1,9 @@
 /*------------ general styles ------------*/
 
+p {
+    color:  #727272;
+}
+
 .primary-btn {
     color: white;
     font-size: larger;
@@ -54,7 +58,6 @@ header a {
 .banner-description {
     width: 75%;
     text-align: center;
-    color: #727272;
 }
 
 .banner-image {
@@ -69,6 +72,9 @@ header a {
 
 .features-container {
     margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .quick-list {
@@ -97,6 +103,86 @@ header a {
 .quick-description h1 {
     font-size: 2em;
     margin: 0;
+}
+
+.features {
+    margin-top: 6em;
+    width: 75%;
+    display: flex;
+    align-items: flex-end;
+    gap: 1em;
+}
+
+.features-description {
+    height: auto;
+}
+
+.features-description div {
+    display: flex;
+}
+
+.features-description div div {
+    width: 5px;
+    height: auto;
+    background-color: #FF900E;
+}
+
+.features-description .title {
+    margin: 0;
+    padding-left: 10px;
+}
+
+.features-description > p {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.features-description .card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+    margin: 1em;
+    box-shadow: 2px  2px 1em lightgray;
+}
+
+.card h3, p {
+    margin: 0;
+}
+
+.features-description {
+    width: 50%;
+}
+
+.features-img {
+    width: 50%;
+    height: 100%;
+}
+
+.features-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.features-btn {
+    border: none;
+    background-color: #FF900E;
+    color: white;
+    padding: 3em 4em;
+    border-radius: .5em;
+    position: relative;
+    left: 45%;
+    top: -100px;
+    margin-bottom: -100px;
+}
+
+.features-btn h3 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.features-btn h4 {
+    font-size: 1em;
+    font-weight: 500;
 }
 
 /* mobile devices css */
@@ -128,5 +214,19 @@ header a {
 
     .quick-description {
         width: 80%;
+    }
+
+    .features {
+        flex-direction: column ;
+    }
+
+    .features-description, .features-img {
+        width: 100%;
+    }
+
+    .features-btn {
+        position: static;
+        margin-left: 25%;
+        margin-top: 1em;
     }
 }
